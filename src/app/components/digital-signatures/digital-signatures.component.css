@@ -1,0 +1,304 @@
+.arrow-body{
+    display: none;
+  }
+  section.container.top-bottom-paddings {
+    background-color: #fff;
+   }
+  .top-bottom-paddings {
+    padding: 60px 0px;
+  }
+  .body, .panel-body {
+    background-color: #fff;
+    }
+    .body h1 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      color: #000;
+      font-weight: bold;
+  }
+  
+  .body p {
+    font-size: 16px;
+    line-height: 23px;
+    font-family: sans-serif;
+    color: #000;
+    text-align: justify;
+  }
+  
+  .text-right-align{
+    text-align: right;
+  }
+  .signature-heading-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .signature-text-right-align {
+    width: 300px;
+    height: auto;
+    /* border: 1px solid; */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 5px;
+  }
+  .signature-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .signature-box-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 160px;
+    border: 1px solid #000;
+  }
+  
+  .body-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-boxes {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+  }
+  
+  .flex-boxes i {
+    font-size: 30px;
+      line-height: 35px;
+      background: radial-gradient(circle, rgba(199,231,255,1) 0%, rgba(254,254,255,0.4992121848739496) 50%, rgba(199,231,255,1) 100%);
+      padding: 10px;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+      transition: 0.5s all ease-in-out;
+  }
+  
+  .flex-boxes h3{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.01s all ease-in-out;
+    font-weight: normal;
+  }
+  
+  
+  .flex-boxes:hover i {
+    color: #fff;
+    background: radial-gradient(circle, #c1272e 0%, rgba(254,254,255,0.4992121848739496) 50%, #c1272e 100%);
+    transform: scale(1.11);
+    box-shadow: 0px 5px 21px -5px #CDD1E1;
+  }
+  
+  .flex-boxes:hover h3{
+    color:#c1272e ;
+  }
+  canvas {
+    border: 1px solid 
+    rgb(105, 105, 105);
+      background-color: #c7e7ff3b;
+      z-index: 999;
+  }
+  
+  .box{
+    width: 300px;
+    height: 160px;
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  /* ------------------------------------------------------ */  
+  /* Tab Responsive Starts (Tablet Devices) */
+  /* ------------------------------------------------------ */
+  @media(max-width: 991px){
+    section.container.top-bottom-paddings, section.container.panel-top-bottom-paddings {
+      padding: 15px;
+    }
+  
+  }
+  /* Tab Responsive Ends (Tablet Devices) */
+  /* ------------------------------------------------------ */
+  /* Only Mobile Responsive Starts (Mobile Devices) */
+  /* ------------------------------------------------------ */
+  @media only screen and (min-width: 380px) and (max-width: 600px) { 
+    .arrow-body{
+      width: 50px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 1px 1px 3px #9a9b9ba3;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .arrow-body:hover {
+      background-color: #c1272e;
+      color: #fff;
+    }
+    section.container.top-bottom-paddings {
+      background-color: #c7e7fe;
+      padding: 20px 15px;
+    }
+    section.container.panel-top-bottom-paddings{
+      background-color: #c7e7fe;
+      padding: 0px 15px 20px 15px;
+    }
+    .body {
+      background-color: #fff;
+      padding: 15px;
+    }
+    .panel-body{
+      background-color: #c7e7fe;
+    }
+    .text-right-align{
+      text-align: left;
+    }
+    .signature-heading-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+  }
+  .signature-text-right-align {
+    text-align: left;
+  }
+  .signature-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  section .container .panel-top-bottom-paddings .flex-container .panel-body {
+    padding: 0px !important;
+  }
+  .flex-boxes {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+  }
+  .flex-container .panel-body{
+    padding: 10px;
+  }
+  
+  .flex-boxes i {
+    font-size: 20px;
+      line-height: 25px;
+      background: radial-gradient(circle, rgba(199,231,255,1) 0%, rgba(254,254,255,0.4992121848739496) 50%, rgba(199,231,255,1) 100%);
+      padding: 5px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+      transition: 0.5s all ease-in-out;
+  }
+  .flex-boxes h3{
+    display: none;
+  }
+  }
+  /* Only Mobile Responsive Ends (Mobile Devices) */
+  /* ------------------------------------------------------ */
+  /* Extra Small Mobile Responsive Starts (Extra Mobile Devices)*/
+  @media only screen and (min-width: 150px) and (max-width: 379px) { 
+    .arrow-body{
+      width: 50px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 1px 1px 3px #9a9b9ba3;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .arrow-body:hover {
+      background-color: #c1272e;
+      color: #fff;
+    }
+    section.container.top-bottom-paddings, section.container.panel-top-bottom-paddings {
+      background-color: #c7e7fe;
+      padding: 15px;
+    }
+    .body, .panel-body {
+      background-color: #fff;
+      padding: 15px;
+    }
+    .text-right-align{
+      text-align: left;
+    }
+    .signature-heading-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: start;
+  }
+  .signature-text-right-align {
+    text-align: left;
+  }
+  .signature-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  section .container .panel-top-bottom-paddings .flex-container .panel-body {
+    padding: 0px !important;
+  }
+  .flex-boxes {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 20%;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+  }
+  .flex-container .panel-body{
+    padding: 10px;
+  }
+  
+  .flex-boxes i {
+    font-size: 20px;
+      line-height: 25px;
+      background: radial-gradient(circle, rgba(199,231,255,1) 0%, rgba(254,254,255,0.4992121848739496) 50%, rgba(199,231,255,1) 100%);
+      padding: 5px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0px auto;
+      transition: 0.5s all ease-in-out;
+  }
+  .flex-boxes h3{
+    display: none;
+  }
+  }
+  /* Extra Small Mobile Responsive Ends (Extra Mobile Devices)*/

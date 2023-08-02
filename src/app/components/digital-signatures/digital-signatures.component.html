@@ -1,0 +1,111 @@
+<section class="container top-bottom-paddings">
+    <div class="arrow-body" routerLink="/home">
+       <i class="fa fa-arrow-left-long"></i>
+       </div>
+      <div class="flex-container">
+       <div class="body">
+          <h1>Lorem ipsum is Simple Dummy</h1>
+          <p>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates quibusdam enim omnis animi perferendis pariatur deserunt totam dolores magnam corporis beatae nihil temporibus aperiam nulla, harum maxime. Vitae, dolore?
+              <br><br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.<br><br>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptates quibusdam enim omnis animi perferendis pariatur deserunt totam dolores magnam corporis beatae nihil temporibus aperiam nulla, harum maxime. Vitae, dolore?<br><br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <div class="signature-heading-box">
+             <div class="signature-text-right-align">
+                Signature
+             </div>
+          </div>
+
+          <div class="signature-box">
+             <div class="signature-box-style">
+                <div class="box">
+                    <div *ngIf="showContent.textSign">
+                        !!!Text-Works!!!
+                    </div>
+                      <div *ngIf="showContent.drawSign">
+                       <div class="row">
+                          <div>
+                             <div class="justify-content-end flex-wrap">
+                                <canvas #signPadCanvas (touchstart)="startSignPadDrawing($event)" (touchmove)="movedFinger($event)"></canvas>
+                              </div>
+                              <button class="btn btn-success" color="secondary" (click)="saveSignPad()">Save</button>
+                              <button class="btn btn-danger" (click)="clearSignPad()">Clear</button>
+                              <button class="btn btn-warning" (click)="undoSign()">Undo</button>
+                              <div>
+                              <div>
+                                  <img src='{{ signImage }}' />
+                                </div>
+                              </div>
+                           </div>
+                      </div>
+                 </div>
+                </div>
+             </div>
+          </div>
+
+          
+       </div>
+
+   
+      
+      </div>
+</section>
+
+<section class="container panel-top-bottom-paddings">
+   <div class="flex-container">
+    <div class="panel-body">
+       
+<div class="body-container" (click)="showContent.textSign = !showContent.textSign; showContent.drawSign = false">
+<div class="flex-boxes">
+ <i class="fa-solid fa-text-width" aria-hidden="true"></i>
+ <h3>Text Sign</h3>
+</div>
+<div class="flex-boxes" (click)="showContent.drawSign = !showContent.drawSign; showContent.textSign = false">
+ <i class="fa-sharp fa-solid fa-file-contract" aria-hidden="true"></i>
+ <h3> Draw Sign</h3>
+</div>
+<div class="flex-boxes">
+ <i class="fa-sharp fa-solid fa-palette" aria-hidden="true"></i>
+ <h3>Color</h3>
+</div>
+<div class="flex-boxes">
+ <i class="fa-solid fa-eraser" aria-hidden="true"></i>
+          <h3>Eraser</h3>
+</div>
+<div class="flex-boxes" (click)="downloadMyFile()">
+ <i class="fa-sharp fa-solid fa-download" aria-hidden="true"></i>
+ <h3>Download</h3>
+</div>
+
+ </div> 
+
+       
+    </div>
+
+
+   
+   </div>
+</section>
+
+<!-- signature pad npm -->
+<section class="container panel-top-bottom-paddings">
+    <div class="row">
+        <div style="text-align: center; margin-top:30px;">
+           <div class="d-flex justify-content-end flex-wrap">
+              <canvas #signPadCanvas (touchstart)="startSignPadDrawing($event)" (touchmove)="movedFinger($event)"></canvas>
+            </div>
+            <button class="btn btn-success" color="secondary" (click)="saveSignPad()">Save</button>
+            <button class="btn btn-danger" (click)="clearSignPad()">Clear</button>
+            <button class="btn btn-warning" (click)="undoSign()">Undo</button>
+            <div>
+            <div>
+                <img src='{{ signImage }}' />
+              </div>
+            </div>
+         </div>
+</div>
+</section>
+<!-- signature pad npm -->

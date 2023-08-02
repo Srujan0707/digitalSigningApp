@@ -1,0 +1,478 @@
+.home-background-image {
+    transition: width 0.25s ease, margin 0.25s ease;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background:linear-gradient(#f4f4f4e8, #ffffffcf), url("../../../images/image-06.avif");
+    background-repeat: no-repeat, repeat;
+    background-position: center; 
+    background-size: cover; 
+  }
+  
+  .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .flex-container > div {
+      width: 100%;
+      max-width: 25%;
+      /* border: 1px solid pink; */
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+     
+    }
+  
+  .container .row .top-bottom-paddings{
+      width: 1170px !important;
+      margin: auto;
+  }
+  
+  .home-background-image .container {
+    width: 90%;
+  }
+  
+  .arrow-body{
+    display: none;
+  }
+
+  .top-bottom-paddings{
+    padding: 40px 0px;
+  }
+  
+  .paddings-none{
+      padding: 0px 0px;
+  }
+  
+    .mobile-bg {
+      padding: 25px;
+      transition: 0.40s all ease;
+  }
+  
+    .border-gradient-rounded {
+      border: 4px solid transparent;
+      background-color: white;
+      border-radius: 50%;
+      background: linear-gradient(to right, white, white), 
+        linear-gradient(to right, #6c757d9c, #c7e7ff, #6c757d9c);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      width: 150px;
+      height: 150px;
+      padding: 20px;
+      transition: 0.5s all ease-in-out;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      
+  }
+  .mobile-bg:hover{
+    transform: scale(1.11);   
+     transition: 0.40s all ease;
+   }
+  
+   .mobile-bg:hover .custom-icon-style{
+    background: -webkit-linear-gradient(#6c757d9c, #c7e7ff, #6c757d9c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+  .custom-icon-style {
+    font-size: 65px;
+    background: -webkit-linear-gradient(#c7e7ff, #6c757d9c, #c7e7ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-color{
+    color: #6c757d;
+  }
+  
+  .heading-style {
+    text-transform: uppercase;
+    color: #3d3d3d;
+    transition: 0.20s;
+    word-spacing: 3px;
+    cursor: pointer;
+  }
+  
+  .mobile-bg:hover .heading-style{
+    color: #c1272e;
+  
+  }
+  
+  .icons-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop-box-bg{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #c7e7ff;
+    flex-direction: row;
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+  }
+  
+  
+  i.icon-custom{
+    font-size: 30px;
+    line-height: 20px;
+    padding: 0px 20px;
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .icon-body:hover i.icon-custom {
+    color: #c1272e;
+    transform: scale(1.11);
+  }
+  
+  /* //button for modal //
+    button{
+    padding: 15px 20px;
+    background-color: #0b3582;
+    font-size: 14px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+  } */
+  
+  
+  .custom-modal{
+    position: fixed;
+    background-color: #000000d6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+  
+  .custom-modal-content{
+    background-color: white;
+    width: 40%;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: 0.40s all ease;
+  }
+  
+  hr {
+    width: 30%;
+    height: 3px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #70d9e6;
+    margin: 0px auto;
+    top: 0px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .custom-modal-header{
+    padding: 20px;
+    position: relative;
+  }
+  .custom-modal-header h4{
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .custom-modal-body{
+    padding: 20px 0px;
+    min-height: auto;
+  }
+  
+  .custom-modal-body h5 a{
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 0px;
+    font-family: sans-serif;
+    color: #6c757d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.40s all ease;
+    cursor: pointer;
+  }
+  .custom-modal-body h5 a:hover{
+    color: #c1272e;
+  
+  }
+  
+  .custom-modal-body i {
+    color: #c1272e;
+    padding-right: 10px;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  
+  /* --------------------------------------------------------------------------- */
+  /* Drag & Drop CSS Start */
+  
+  .flex-container .dropify-section {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 100% !important;
+    height: 250px;
+    padding: 10px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777;
+    background-color: transparent;
+    background-image: none;
+    text-align: center;
+    border: 3px dashed #00000086;
+    border-radius: 10px;
+    transition: border-color .15s linear;
+  }
+  .flex-container .dropify-section:hover {
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(135deg, #F2F7F8 25%, transparent 25%, transparent 50%, #F2F7F8 50%, #F2F7F8 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, #F2F7F8 25%, transparent 25%, transparent 50%, #F2F7F8 50%, #F2F7F8 75%, transparent 75%, transparent);
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+  }
+  
+  .dropify-section .dropify-message {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .dropify-section input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .dropify-message h2 {
+    font-size: 40px;
+    line-height: 44px;
+    color: #99d0fa;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: -30px
+  }
+  
+  .primary-button{
+    background-color: #c1272e;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 55px 10px 55px;
+    font-weight: normal;
+    border: 1px solid transparent;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .dropify-section:hover .primary-button{
+    background-color: #fff;
+    color: #c1272e;
+    border: 1px solid #c1272e;
+  }
+  .dropify-section img {
+    width: 20%;
+    height: auto;
+  }
+
+  .row.side-paddings {
+    justify-content: center !important;
+    align-items: center;
+}
+
+.mobile-show{
+  display: none;
+}
+
+  /* Drag & Drop CSS End */
+  
+  /* ------------------------------------------------------ */
+  /* Tab Responsive Starts (Tablet Devices) */
+  /* --------------------------------------------------------------------------- */
+  @media(max-width: 991px){
+    .flex-container > div {
+      max-width: 33.33%;
+      padding: 10px 8px;
+  }
+  .mobile-bg {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #9a9b9ba3;
+  }
+  
+  .border-gradient-rounded {
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 10px auto;  
+  }
+  
+  .heading-style {
+    font-size: 13px;
+    word-spacing: 0px;
+  }
+  
+  .custom-modal-content{
+    background-color: white;
+    width: 60%;
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: 0.20s;
+  }
+  
+  .dropify-section img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .mobile-show{
+    display: none;
+  }
+
+    }
+  /*Tablet Responsive Ends*/
+  
+    /* ------------------------------------------------------ */
+  /* Only Mobile Responsive Starts (Mobile Devices) */
+  @media only screen and (min-width: 380px) and (max-width: 600px) { 
+    .flex-container > div {
+      max-width: 50%;
+      padding: 10px 8px;
+  }
+  
+  .custom-modal-content{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    top: 55%;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: 0.20s;
+  }
+  .dropify-section img {
+    width: 60%;
+    height: auto;
+  }
+  
+  .container.paddings-none {
+    display: none;
+  }
+  .mobile-show{
+    display: block;
+  }
+  .home-background-image {
+    transition: width 0.25s ease, margin 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#c7e7ff, #ffffff9e), url("../../../images/image-06.avif");
+    background-repeat: repeat, repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+    margin-top: -130px;
+}
+.top-bottom-paddings{
+  padding: 150px 0px 100px 0px;
+}
+.arrow-body{
+  width: 50px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #9a9b9ba3;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.arrow-body:hover {
+  background-color: #c1272e;
+  color: #fff;
+}
+  }
+  /*Mobile Responsive Ends*/
+  
+  /* ------------------------------------------------------ */
+  /* Extra Small Mobile Responsive Starts (Extra Mobile Devices)*/
+  
+  @media only screen and (min-width: 150px) and (max-width: 379px) { 
+  
+    .flex-container > div {
+      max-width: 100%;
+      padding: 10px 8px;
+  }
+  
+  .mobile-bg{
+    padding: 20px;
+  }
+  .dropify-section img {
+    width: 70%;
+    height: auto;
+  }
+  .container.paddings-none {
+    display: none;
+  }
+  .mobile-show{
+    display: block;
+  }
+
+  .home-background-image {
+    transition: width 0.25s ease, margin 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#c7e7ff, #ffffff9e), url("../../../images/image-06.avif");
+    background-repeat: repeat, repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+    margin-top: -130px;
+}
+.top-bottom-paddings{
+  padding: 150px 0px;
+}
+.arrow-body:hover {
+  background-color: #c1272e;
+  color: #fff;
+}
+  
+  }
+  /* Extra Small Mobile Responsive Ends */

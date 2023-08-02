@@ -1,0 +1,118 @@
+<section class="home-background-image">
+<div class="container top-bottom-paddings">
+   <div class="arrow-body" routerLink="/">
+      <i class="fa fa-arrow-left-long"></i>
+      </div>
+     <div class="flex-container">
+      <div>
+           <a class="anchor-hover-effect" target="_self" (click)="show(1)">
+              <div class="mobile-bg">
+                 <div class="border-gradient-rounded cursor-pointer">
+                    <div class="text-center">
+                       <i class="fa-solid fa-upload custom-icon-style" ></i>
+                    </div>
+                 </div>
+                 <div class="heading-style">Upload Document</div>
+              </div>
+           </a>
+        </div>
+        <div>
+           <a class="anchor-hover-effect" target="_self" routerLink="/digitalSingatures">
+              <div class="mobile-bg">
+                 <div class="border-gradient-rounded">
+                    <div class="text-center">
+                       <i class="fa-solid fa-file-contract custom-icon-style"></i>
+                    </div>
+                 </div>
+                 <div class="heading-style">Digital Signature</div>
+              </div>
+           </a>
+        </div>
+        <div>
+           <a class="anchor-hover-effect" (click)="downloadMyFile()">
+              <div class="mobile-bg">
+                 <div class="border-gradient-rounded">
+                    <div class="text-center">
+                       <i class="fa-solid fa-download custom-icon-style"></i>
+                    </div>
+                 </div>
+                 <div class="heading-style">Download Document</div>
+              </div>
+           </a>
+        </div>
+        <div>
+           <a class="anchor-hover-effect" target="_self">
+              <div class="mobile-bg">
+                 <div class="border-gradient-rounded">
+                    <div class="text-center">
+                       <i class="fa-solid fa-share-from-square custom-icon-style"></i>
+                    </div>
+                 </div>
+                 <div class="heading-style">Share Document</div>
+              </div>
+           </a>
+        </div>
+     </div>
+     <!-- Model Content Starts -->
+     <div class="custom-modal" *ngIf="showModal === 1">
+        <div class="custom-modal-content">
+           <div class="custom-modal-header">
+              <hr/>
+              <i class="fa-solid fa-xmark" style="cursor: pointer; right: 10px; position: absolute; top: 10px; color: #000 !important;font-size: 25px;" (click)="close()"></i>
+              <h4>Upload Document</h4>
+              <div class="custom-modal-body">
+                 <h5>
+                    <a type="Upload" target="_self" >
+                    <i class="fa-solid fa-file-pdf"></i>Upload pdf</a>
+                 </h5>
+                 <h5>
+                    <a target="_self">
+                    <i class="fa-solid fa-image"></i>Upload image</a>
+                 </h5>
+                 <h5>
+                    <a target="_self">
+                    <i class="fa-solid fa-file-word"></i>Upload word document</a>
+                 </h5>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- Model Content Ends -->
+  </div>
+  <!-- Dropify Content Starts -->
+  <div class="container paddings-none">
+     <div class="flex-container">
+        <div class="dropify-section">
+           <img [src]="uploadedimage" height="200">
+           <div class="dropify-message">
+              <h2>Drag and drop Document Here to Upload</h2>
+              <button class="primary-button">Select From Device</button>
+              <!-- <button class="primary-button">Remove</button> -->
+           </div>
+           <input type="file" data-max-file-size="30kb" (change)="onSelectFile($event)">          
+        </div>
+     </div>
+     <div class="icons-sections">
+        <div class="drop-box-bg">
+           <div class="icon-body">
+              <a href="#" target="_blank">
+              <i class="fa-brands fa-google-drive icon-custom"></i>
+              </a>     
+           </div>
+           <div class="icon-body">
+              <a href="#" target="_blank">
+              <i class="fa-brands fa-dropbox icon-custom"></i>
+              </a>
+           </div>
+           <div class="icon-body">
+              <a href="#" target="_blank">
+              <i class="fa-regular fa-envelope icon-custom"></i>
+              </a>
+           </div>
+        </div>
+     </div>
+  </div>
+  <!-- Dropify Content Ends -->
+</section>
+
+

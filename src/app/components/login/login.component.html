@@ -1,0 +1,55 @@
+<section class="login-background-image desktop-show">
+  <div class="container">
+    <div class="row side-paddings">
+      <div class="flex-container">
+        <div>       
+          <form #loginForm="ngForm">
+            <div class="form-group">           
+                <input type="email" email class="form-control" placeholder="UserName" name="emailAddress" #emailAddress="ngModel" [ngModel] required/>       
+            </div>
+            <div class="form-group">            
+                <input type="password" class="form-control" placeholder="Password" name="loginPassword" #loginPassword="ngModel" [ngModel] required minlength="6"/>
+            </div>
+            <div class="form-group">
+              
+                <div class="d-flex align-items-center justify-content-center">
+                <button type="button" (click)="dataCaptureOfLoginForm(loginForm)" class=" primary-btn" >
+                Sign in </button> 
+                <!-- [disabled]="!loginForm.valid" -->
+                            <!-- <button type="button" class="btn secondary-btn btn-md" (click)="loginForm.resetForm()">Reset</button> -->
+                          </div>
+           
+            </div>
+            <div class="form-group">
+         
+              <div class="text-center color-white">
+                <a href="#" class="color-white">Forgot password?</a>
+              </div>
+            
+            </div>
+            <div class="form-group">
+          
+              <div class="text-center color-white">
+                Don't have an account? <a href="#" class="color-white text-decoration-underline">Create</a>
+              </div>
+           
+            </div>
+    
+          </form>
+        </div>
+      </div>
+        
+    
+  </div>
+</div>
+</section>
+
+
+<section class="login-background-image mobile-show">
+  <div class="container">
+    <div class="row side-paddings">
+      <div class="flex-container">
+       <div class="button-section">
+        <button class="login-button" routerLink="/home">Get Started &nbsp; <i class="fa fa-arrow-right-long"></i></button>
+       </div>
+      </div></div></div></section>
